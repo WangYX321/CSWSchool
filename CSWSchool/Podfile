@@ -1,0 +1,13 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'CSWSchool' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for CSWSchool
+  pod 'Alamofire', '~> 4.5.1’
+  pod 'SVProgressHUD', '~> 2.0.3'
+  pod 'MJRefresh', '~> 3.1.15.1’
+  pod 'SDWebImage', '~> 4.2.2'
+end
