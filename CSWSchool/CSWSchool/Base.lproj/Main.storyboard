@@ -138,7 +138,7 @@
             <objects>
                 <tableViewController id="rCO-S8-zhb" customClass="NewsTableViewController" customModule="CSWSchool" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GLj-6R-vem">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -157,7 +157,7 @@
             <objects>
                 <tableViewController id="vTe-wT-pMK" customClass="CourseTableViewController" customModule="CSWSchool" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3XI-IW-PkI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -176,7 +176,7 @@
             <objects>
                 <tableViewController id="OfX-am-9AV" customClass="ScheduleTableViewController" customModule="CSWSchool" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Li8-ck-QeZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -190,14 +190,19 @@
             </objects>
             <point key="canvasLocation" x="332" y="2807"/>
         </scene>
-        <!--Item-->
+        <!--Me-->
         <scene sceneID="TZD-Jf-B2g">
             <objects>
                 <navigationController id="2JE-sv-fww" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="X5s-tW-zrr"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="tab_profile" id="X5s-tW-zrr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tWW-47-DYD">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.32549019610000002" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.32549019610000002" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.96470588239999999" green="0.98039215690000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="dxg-nE-yOc" kind="relationship" relationship="rootViewController" id="7wO-iI-xyV"/>
@@ -212,7 +217,7 @@
             <objects>
                 <tableViewController id="dxg-nE-yOc" customClass="MeTableViewController" customModule="CSWSchool" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ohj-WM-Azv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -279,6 +284,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="8j3-i2-yQl" kind="show" identifier="StudentSearchId" trigger="accessoryAction" id="Coz-py-E8o"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="8UH-Un-Xce" style="IBUITableViewCellStyleDefault" id="Wm5-KB-unY">
                                         <rect key="frame" x="0.0" y="208" width="375" height="44"/>
@@ -333,14 +341,58 @@
             </objects>
             <point key="canvasLocation" x="276" y="3648.1259370314847"/>
         </scene>
-        <!--Item-->
+        <!--Search Student View Controller-->
+        <scene sceneID="m8e-b5-R2u">
+            <objects>
+                <viewController id="8j3-i2-yQl" customClass="SearchStudentViewController" customModule="CSWSchool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MxT-I1-1ly">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1P7-H3-0pG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8j3-i2-yQl" id="fUk-MV-MXx"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="8yL-W7-x1f"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="yza-WW-i6f" id="OtB-7A-3O4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="miJ-kg-oRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="yza-WW-i6f">
+                    <connections>
+                        <outlet property="delegate" destination="8j3-i2-yQl" id="V0d-lt-JuK"/>
+                        <outlet property="searchBar" destination="1P7-H3-0pG" id="Dt6-DV-zW0"/>
+                        <outlet property="searchContentsController" destination="8j3-i2-yQl" id="IPb-ry-egu"/>
+                        <outlet property="searchResultsDataSource" destination="8j3-i2-yQl" id="Yvk-db-t2O"/>
+                        <outlet property="searchResultsDelegate" destination="8j3-i2-yQl" id="Grh-Dx-72x"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1034" y="3648"/>
+        </scene>
+        <!--Schedule-->
         <scene sceneID="x4N-wq-8me">
             <objects>
                 <navigationController id="cX7-GO-egc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="7Se-Fc-FPE"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="tab_schedule" id="7Se-Fc-FPE"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ocj-VZ-1gG">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.32549019610000002" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.32549019610000002" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.96470588239999999" green="0.98039215690000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="OfX-am-9AV" kind="relationship" relationship="rootViewController" id="lUn-9g-gTg"/>
@@ -350,14 +402,19 @@
             </objects>
             <point key="canvasLocation" x="-630" y="2807"/>
         </scene>
-        <!--Item-->
+        <!--Course-->
         <scene sceneID="daS-FK-0gH">
             <objects>
                 <navigationController id="TXm-ce-I6z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="uVX-Jl-mfO"/>
+                    <tabBarItem key="tabBarItem" title="Course" image="tab_course" id="uVX-Jl-mfO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HMj-bd-ciR">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.32549019610000002" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.32549019610000002" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.96470588239999999" green="0.98039215690000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="vTe-wT-pMK" kind="relationship" relationship="rootViewController" id="mF9-DK-MJt"/>
@@ -367,14 +424,19 @@
             </objects>
             <point key="canvasLocation" x="-629" y="1978"/>
         </scene>
-        <!--Item-->
+        <!--News-->
         <scene sceneID="cVN-gU-syh">
             <objects>
                 <navigationController id="JeF-gv-1qR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="GUi-94-GEo"/>
+                    <tabBarItem key="tabBarItem" title="News" image="tab_news" id="GUi-94-GEo"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bo-P8-iYB">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.32549019610000002" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.32549019610000002" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.96470588239999999" green="0.98039215690000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="rCO-S8-zhb" kind="relationship" relationship="rootViewController" id="yE3-aH-Nqg"/>
@@ -388,10 +450,11 @@
         <scene sceneID="qD6-vy-kSA">
             <objects>
                 <tabBarController storyboardIdentifier="tabBarcontroller" id="1CO-SX-FUD" customClass="BaseTabBarController" customModule="CSWSchool" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8lx-5i-67z">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="8lx-5i-67z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="JeF-gv-1qR" kind="relationship" relationship="viewControllers" id="deC-Tq-DSK"/>
@@ -407,5 +470,9 @@
     </scenes>
     <resources>
         <image name="login_1" width="3675" height="1485"/>
+        <image name="tab_course" width="16" height="16"/>
+        <image name="tab_news" width="16" height="16"/>
+        <image name="tab_profile" width="16" height="16"/>
+        <image name="tab_schedule" width="16" height="16"/>
     </resources>
 </document>

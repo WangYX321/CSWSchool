@@ -23,7 +23,7 @@ class NewsDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.        
         
         let wkWebConfig = WKWebViewConfiguration()
         let jSString = "var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);"
@@ -35,7 +35,7 @@ class NewsDetailViewController: UIViewController {
         let webView = WKWebView(frame: self.view.bounds, configuration: wkWebConfig)
         self.view.addSubview(webView)
         
-        Id = "1156165"
+//        Id = "1156165"
         let prefix_url = "https://csw.myschoolapp.com/api/news/detail/"+Id+"/?format=json"
         NetworkTools.requestData(.get, URLString: prefix_url) { (result) in
             print(result)

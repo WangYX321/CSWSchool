@@ -22,6 +22,12 @@
 		494B27332013752F00A4B93C /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 494B27312013752F00A4B93C /* NewsCell.xib */; };
 		494B273D2013978000A4B93C /* MeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494B273C2013978000A4B93C /* MeTableViewController.swift */; };
 		494B27452014DEC000A4B93C /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494B27442014DEC000A4B93C /* NewsDetailViewController.swift */; };
+		497BA8D32015BA5800BFB66A /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497BA8D22015BA5800BFB66A /* CourseModel.swift */; };
+		497BA8D62015E86D00BFB66A /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497BA8D42015E86D00BFB66A /* ScheduleCell.swift */; };
+		497BA8D72015E86D00BFB66A /* ScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497BA8D52015E86D00BFB66A /* ScheduleCell.xib */; };
+		497BA8DA2017266800BFB66A /* ScheduleClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497BA8D82017266800BFB66A /* ScheduleClassDetailViewController.swift */; };
+		497BA8DB2017266800BFB66A /* ScheduleClassDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497BA8D92017266800BFB66A /* ScheduleClassDetailViewController.xib */; };
+		497F48E3201E1C5A00CE9453 /* SearchStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497F48E2201E1C5A00CE9453 /* SearchStudentViewController.swift */; };
 		6DA2AC62D306827FA11EBC8E /* Pods_CSWSchool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4933383493FE949AB4F42E27 /* Pods_CSWSchool.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +51,12 @@
 		494B27312013752F00A4B93C /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 		494B273C2013978000A4B93C /* MeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeTableViewController.swift; sourceTree = "<group>"; };
 		494B27442014DEC000A4B93C /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		497BA8D22015BA5800BFB66A /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
+		497BA8D42015E86D00BFB66A /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		497BA8D52015E86D00BFB66A /* ScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleCell.xib; sourceTree = "<group>"; };
+		497BA8D82017266800BFB66A /* ScheduleClassDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleClassDetailViewController.swift; sourceTree = "<group>"; };
+		497BA8D92017266800BFB66A /* ScheduleClassDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleClassDetailViewController.xib; sourceTree = "<group>"; };
+		497F48E2201E1C5A00CE9453 /* SearchStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStudentViewController.swift; sourceTree = "<group>"; };
 		C8BEFAB3777A7E9AA77D47CC /* Pods-CSWSchool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSWSchool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSWSchool/Pods-CSWSchool.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				491DF76E2013469D00CB7C36 /* CourseTableViewController.swift */,
+				497BA8D22015BA5800BFB66A /* CourseModel.swift */,
 			);
 			path = Courses;
 			sourceTree = "<group>";
@@ -99,6 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				491DF770201346BB00CB7C36 /* ScheduleTableViewController.swift */,
+				497BA8D42015E86D00BFB66A /* ScheduleCell.swift */,
+				497BA8D52015E86D00BFB66A /* ScheduleCell.xib */,
+				497BA8D82017266800BFB66A /* ScheduleClassDetailViewController.swift */,
+				497BA8D92017266800BFB66A /* ScheduleClassDetailViewController.xib */,
 			);
 			path = Schedules;
 			sourceTree = "<group>";
@@ -107,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				494B273C2013978000A4B93C /* MeTableViewController.swift */,
+				497F48E2201E1C5A00CE9453 /* SearchStudentViewController.swift */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -248,6 +266,8 @@
 				4937F7792010CDB60045B05F /* Assets.xcassets in Resources */,
 				494B27332013752F00A4B93C /* NewsCell.xib in Resources */,
 				4937F7742010CDB60045B05F /* Main.storyboard in Resources */,
+				497BA8D72015E86D00BFB66A /* ScheduleCell.xib in Resources */,
+				497BA8DB2017266800BFB66A /* ScheduleClassDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,12 +338,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497F48E3201E1C5A00CE9453 /* SearchStudentViewController.swift in Sources */,
 				494B27272013699700A4B93C /* BaseTabBarController.swift in Sources */,
 				494B273D2013978000A4B93C /* MeTableViewController.swift in Sources */,
 				4937F7712010CDB60045B05F /* LoginViewController.swift in Sources */,
+				497BA8D62015E86D00BFB66A /* ScheduleCell.swift in Sources */,
 				491DF771201346BB00CB7C36 /* ScheduleTableViewController.swift in Sources */,
 				494B27322013752F00A4B93C /* NewsCell.swift in Sources */,
 				4937F76F2010CDB60045B05F /* AppDelegate.swift in Sources */,
+				497BA8DA2017266800BFB66A /* ScheduleClassDetailViewController.swift in Sources */,
+				497BA8D32015BA5800BFB66A /* CourseModel.swift in Sources */,
 				494B27452014DEC000A4B93C /* NewsDetailViewController.swift in Sources */,
 				494B272B20136D2600A4B93C /* NetworkTools.swift in Sources */,
 				491DF76F2013469D00CB7C36 /* CourseTableViewController.swift in Sources */,

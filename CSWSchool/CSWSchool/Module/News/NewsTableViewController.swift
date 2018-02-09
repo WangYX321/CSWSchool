@@ -93,6 +93,8 @@ class NewsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = NewsDetailViewController()
+        vc.Id = "\(self.dataArray[indexPath.row].Id)"
+        vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
